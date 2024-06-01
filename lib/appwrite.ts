@@ -33,7 +33,7 @@ export async function createAdminClient() {
     get account() {
       return new Account(client);
     },
-    get detabase() {
+    get database() {
       return new Databases(client);
     },
     get user() {
