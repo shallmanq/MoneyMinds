@@ -1,8 +1,6 @@
 # <a name="introduction">🤖 Introduction</a>
 
-Built with Next.js, Horizon is a financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+Developed with Next.js, MoneyMinds is a financial SaaS platform that integrates with multiple bank accounts, displays transactions in real-time, enables users to transfer money to other platform users, and manages their finances comprehensively.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -36,3 +34,31 @@ Built with Next.js, Horizon is a financial SaaS platform that connects to multip
 👉 **Responsiveness**: Ensures the application adapts seamlessly to various screen sizes and devices, providing a consistent user experience across desktop, tablet, and mobile platforms.
 
 and many more, including code architecture and reusability.
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
+
+You can clone the repository and use it anyhow you like.
+
+**Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+**Set Up Environment Variables**
+
+Create a new file named `.env` in the root of your project and add the following content:
