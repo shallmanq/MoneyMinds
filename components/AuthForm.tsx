@@ -31,7 +31,6 @@ const AuthForm = ({ type }: { type: string }) => {
   const [isLoading, setIsLoading] = useState(false);
   const formSchema = authFormSchema(type);
 
-  // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -45,7 +44,7 @@ const AuthForm = ({ type }: { type: string }) => {
     setIsLoading(true);
 
     try {
-      // Sign up with Appwrite & create plaid link token
+      // Sign up with Appwrite & create plaid token
 
       if (type === "sign-up") {
         const userData = {
@@ -95,7 +94,7 @@ const AuthForm = ({ type }: { type: string }) => {
           </h1>
         </Link>
 
-        <div className="flex flex-col gap-1 md:gap-3">
+        <div className="flex gap-1 md:gap-3">
           <h1 className="text-24 lg:text-36 font-semibold text-gray-900">
             {user ? "Link Account" : type === "sign-in" ? "Sign In" : "Sign Up"}
             <p className="text-16 font-normal text-gray-600">

@@ -36,6 +36,7 @@ export const getUserInfo = async ({ userId }: getUserInfoProps) => {
   }
 };
 
+// Log into a user account
 export const signIn = async ({ email, password }: signInProps) => {
   try {
     const { account } = await createAdminClient();
@@ -57,6 +58,7 @@ export const signIn = async ({ email, password }: signInProps) => {
   }
 };
 
+// Create a user account
 export const signUp = async ({ password, ...userData }: SignUpParams) => {
   const { email, firstName, lastName } = userData;
 
