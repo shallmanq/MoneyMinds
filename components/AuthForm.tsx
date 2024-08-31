@@ -31,6 +31,7 @@ const AuthForm = ({ type }: { type: string }) => {
   const [isLoading, setIsLoading] = useState(false);
   const formSchema = authFormSchema(type);
 
+  // Form definition.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -39,7 +40,7 @@ const AuthForm = ({ type }: { type: string }) => {
     }
   });
 
-  // 2. Define a submit handler.
+  // submit handler.
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     setIsLoading(true);
 
